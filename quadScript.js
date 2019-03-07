@@ -22,6 +22,12 @@ function results() {
   ctx.arc(scaledX(0),scaledY(plugX(0)),5,0,6.28);
   ctx.fill();
 
+  ctx.beginPath();
+  ctx.arc(scaledX(vX),scaledY(vY),5,0,6.28);
+  ctx.fill();
+
+
+
 
     ctx.lineWidth= 2;
   ctx.strokeStyle= "rgba(0,50,200,.3)";
@@ -108,5 +114,6 @@ function scaledY(y){
 function reset() {
 	ctx.clearRect(0,0,w,h);
 	graphpaper();
+
 
 }
